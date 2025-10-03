@@ -1,42 +1,42 @@
 
 public class Boards
 	{
-		static String[][] userBoard = new String[5][5];
-		static String[][] computerGivenShipBoard = new String[5][5];
+		static String[][] user5x5Board = new String[5][5];
+		static String[][] computerGivenShip5x5Board = new String[5][5];
 
-		public static void initializeEmptyBoard()
+		public static void initialize5x5EmptyBoard()
 			{
 
 				// Fill Board with empty spaces
-				for (int row = 0; row < userBoard.length; row++)
+				for (int row = 0; row < user5x5Board.length; row++)
 					{
-						for (int col = 0; col < userBoard[row].length; col++)
+						for (int col = 0; col < user5x5Board[row].length; col++)
 							{
-								userBoard[row][col] = " ";
+								user5x5Board[row][col] = " ";
 							}
 					}
 
 			}
 
-		public static void printBoard()
+		public static void print5x5Board()
 			{
 				// Print Out Board
 				System.out.println("    1   2   3   4   5");
 				System.out.println("  ---------------------");
-				System.out.println("A | " + userBoard[0][0] + " | " + userBoard[0][1] + " | " + userBoard[0][2] + " | "
-						+ userBoard[0][3] + " | " + userBoard[0][4] + " |");
+				System.out.println("A | " + user5x5Board[0][0] + " | " + user5x5Board[0][1] + " | " + user5x5Board[0][2] + " | "
+						+ user5x5Board[0][3] + " | " + user5x5Board[0][4] + " |");
 				System.out.println("  ---------------------");
-				System.out.println("B | " + userBoard[1][0] + " | " + userBoard[1][1] + " | " + userBoard[1][2] + " | "
-						+ userBoard[1][3] + " | " + userBoard[1][4] + " |");
+				System.out.println("B | " + user5x5Board[1][0] + " | " + user5x5Board[1][1] + " | " + user5x5Board[1][2] + " | "
+						+ user5x5Board[1][3] + " | " + user5x5Board[1][4] + " |");
 				System.out.println("  ---------------------");
-				System.out.println("C | " + userBoard[2][0] + " | " + userBoard[2][1] + " | " + userBoard[2][2] + " | "
-						+ userBoard[2][3] + " | " + userBoard[2][4] + " |");
+				System.out.println("C | " + user5x5Board[2][0] + " | " + user5x5Board[2][1] + " | " + user5x5Board[2][2] + " | "
+						+ user5x5Board[2][3] + " | " + user5x5Board[2][4] + " |");
 				System.out.println("  ---------------------");
-				System.out.println("D | " + userBoard[3][0] + " | " + userBoard[3][1] + " | " + userBoard[3][2] + " | "
-						+ userBoard[3][3] + " | " + userBoard[3][4] + " |");
+				System.out.println("D | " + user5x5Board[3][0] + " | " + user5x5Board[3][1] + " | " + user5x5Board[3][2] + " | "
+						+ user5x5Board[3][3] + " | " + user5x5Board[3][4] + " |");
 				System.out.println("  ---------------------");
-				System.out.println("E | " + userBoard[4][0] + " | " + userBoard[4][1] + " | " + userBoard[4][2] + " | "
-						+ userBoard[4][3] + " | " + userBoard[4][4] + " |");
+				System.out.println("E | " + user5x5Board[4][0] + " | " + user5x5Board[4][1] + " | " + user5x5Board[4][2] + " | "
+						+ user5x5Board[4][3] + " | " + user5x5Board[4][4] + " |");
 				System.out.println("  ---------------------");
 
 				// Space
@@ -46,21 +46,21 @@ public class Boards
 		public static void initializeComputerGivenShips()
 			{
 				// Fill Board with empty spaces
-				for (int row = 0; row < computerGivenShipBoard.length; row++)
+				for (int row = 0; row < computerGivenShip5x5Board.length; row++)
 					{
-						for (int col = 0; col < computerGivenShipBoard[row].length; col++)
+						for (int col = 0; col < computerGivenShip5x5Board[row].length; col++)
 							{
-								computerGivenShipBoard[row][col] = " ";
+								computerGivenShip5x5Board[row][col] = " ";
 							}
 					}
 			}
 
-		public static void computerGivenShips()
+		public static void computerGivenShips5x5()
 			{
-				computerGivenShipBoard[1][0] = "S";
-				computerGivenShipBoard[1][1] = "S";
-				computerGivenShipBoard[1][2] = "S";
-				computerGivenShipBoard[3][3] = "S";
-				computerGivenShipBoard[4][3] = "S";
+				computerGivenShip5x5Board[1][0] = "S";
+				computerGivenShip5x5Board[1][1] = "S";
+				computerGivenShip5x5Board[1][2] = "S";
+				computerGivenShip5x5Board[3][3] = "S";
+				computerGivenShip5x5Board[4][3] = "S";
 			}
 	}
