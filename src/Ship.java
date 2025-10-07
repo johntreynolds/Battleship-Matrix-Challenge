@@ -1,15 +1,39 @@
 public class Ship
 	{
-		private int hitNumber;
+		private int shipSpaces;
 		private String shipName;
 		private String horiOrVert;
-		
-		public Ship (int n, String name, String direction)
-		{
-			hitNumber = n;
-			shipName = name;
-			horiOrVert = direction;
-		}
+		private int hitNumber;
+		private boolean sunk;
+
+		public Ship(int n, String name, String direction, int h, boolean s)
+			{
+				shipSpaces = n;
+				shipName = name;
+				horiOrVert = direction;
+				hitNumber = h;
+				sunk = s;
+			}
+
+		public int getShipSpaces()
+			{
+				return shipSpaces;
+			}
+
+		public void setShipSpaces(int shipSpaces)
+			{
+				this.shipSpaces = shipSpaces;
+			}
+
+		public boolean isSunk()
+			{
+				return sunk;
+			}
+
+		public void setSunk(boolean sunk)
+			{
+				this.sunk = sunk;
+			}
 
 		public int getHitNumber()
 			{
@@ -40,7 +64,5 @@ public class Ship
 			{
 				this.shipName = shipName;
 			}
-		
-		
-		
+
 	}
