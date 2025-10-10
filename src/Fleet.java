@@ -8,15 +8,15 @@ public class Fleet
 		public static void fillDeck()
 			{
 				// number of space , ship name, direction (hori or vert), number of hits, sunk
-				//Index 1
+				//Index 0
 				fleet.add(new Ship(5, "Carrier", "", 0, false));
-				//Index 2
+				//Index 1
 				fleet.add(new Ship(4, "Battleship", "", 0, false));
-				//Index 3
+				//Index 2
 				fleet.add(new Ship(3, "Cruiser", "", 0, false));
-				//Index 4
+				//Index 3
 				fleet.add(new Ship(3, "Submarine", "", 0, false));
-				//Index 5
+				//Index 4
 				fleet.add(new Ship(2, "Destroyer", "", 0, false));
 			}
 	}
