@@ -36,9 +36,9 @@ public class PlayerInteraction
 				System.out.println("1) 5x5");
 				System.out.println("2) 10x10");
 
-				boolean incorrectAnswer = false;
+				boolean correctAnswer = false;
 
-				while (!incorrectAnswer)
+				while (!correctAnswer)
 					{
 						userIntInput = new Scanner(System.in);
 						int answer = userIntInput.nextInt();
@@ -56,7 +56,7 @@ public class PlayerInteraction
 						else
 							{
 								System.out.println("Improper format, answer again");
-								incorrectAnswer = true;
+								correctAnswer = false;
 							}
 					}
 
@@ -231,10 +231,11 @@ public class PlayerInteraction
 									System.out.println("");
 									System.out.println("That is not a valid input");
 									System.out.println("Guess again");
+
 								}
 							}
+
 						antiDoubleGuess();
-						
 					}
 
 			}
